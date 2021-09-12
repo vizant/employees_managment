@@ -28,10 +28,6 @@ public class EmployeeDao {
 
 
     private Connection getConnection() {
-        Properties props = new Properties();
-        props.setProperty("user", jdbcUsername);
-        props.setProperty("password", jdbcPassword);
-
         Connection connection = null;
         try {
             Class.forName(jdbcDriver);
